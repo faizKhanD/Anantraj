@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+   // "typeRoots": ["./node_modules/@types"],
+    /* Base Options */
+    "target": "es2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",  // ✅ Fix: Must match 'module'
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+
+    /* Output & Build */
+    "outDir": "./dist",
+    "sourceMap": true,
+
+    /* Library Build */
+    "declaration": true,
+    "composite": true,
+    "declarationMap": true,
+
+    /* Type Definitions & Compatibility */
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true
+  },
+"include": ["src/**/*", "types/**/*.d.ts" ,"src/**/*.json"],
+  "exclude": ["node_modules", "dist"]
+}
